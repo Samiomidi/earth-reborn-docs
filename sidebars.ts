@@ -1,28 +1,41 @@
-
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 const sidebars: SidebarsConfig = {
-  tutorialSidebar: [
-    'intro',
+  sidebar: [
     {
-      type: 'category',
-      label: 'Getting Started',
-      items: ['getting-started/installation'],
+      type: "category",
+      label: "Introduction",
+      items: ["introduction/welcome", "introduction/vision"],
     },
     {
-      type: 'category',
-      label: 'Platform',
-      items: ['platform/monorepo-structure'],
+      type: "category",
+      label: "Economy",
+      items: ["economy/overview", "economy/currency"],
     },
     {
-      type: 'category',
-      label: 'Applications',
-      items: ['apps/docs-app'],
+      type: "category",
+      label: "Ownership",
+      items: ["ownership/nft"],
     },
     {
-      type: 'category',
-      label: 'Configuration',
-      items: ['configuration/branding'],
+      type: "category",
+      label: "Gameplay",
+      items: ["gameplay/core"],
+    },
+    {
+      type: "category",
+      label: "World",
+      items: ["nations/world"],
+    },
+    {
+      type: "category",
+      label: "Architecture",
+      items: ["architecture/system"],
+    },
+    {
+      type: "category",
+      label: "Roadmap",
+      items: ["roadmap/roadmap"],
     },
   ],
 };
