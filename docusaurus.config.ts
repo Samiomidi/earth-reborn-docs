@@ -1,61 +1,60 @@
-
-import type {Config} from '@docusaurus/types';
-import {themes as prismThemes} from 'prism-react-renderer';
+import type { Config } from "@docusaurus/types";
+import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
-  title: 'EARTH REBORN',
-  tagline: 'Persistent MMO Economy Civilization',
-  favicon: 'img/favicon.ico',
+  title: "EARTH REBORN",
+  tagline: "Persistent MMO Economy Civilization",
+  favicon: "img/favicon.ico",
 
-  url: 'https://docs.earthreborn.com',
-  baseUrl: '/',
+  url: "https://docs.earthreborn.com",
+  baseUrl: "/",
 
-  organizationName: 'earth-reborn',
-  projectName: 'earth-reborn-docs',
+  organizationName: "earth-reborn",
+  projectName: "earth-reborn-docs",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: require.resolve("./sidebars.ts"),
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       },
     ],
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'EARTH REBORN',
+      title: "EARTH REBORN",
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
+          type: "docSidebar",
+          sidebarId: "sidebar",
+          position: "left",
+          label: "Documentation",
         },
         {
-          href: 'https://github.com/Samiomidi/earth-reborn-docs',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/Samiomidi/earth-reborn-docs",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
