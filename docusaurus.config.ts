@@ -25,6 +25,7 @@ const config: Config = {
       "classic",
       {
         docs: {
+        routeBasePath: '/docs',
           sidebarPath: require.resolve("./sidebars.ts"),
         },
         blog: false,
@@ -43,6 +44,7 @@ const config: Config = {
         {
           type: "docSidebar",
           sidebarId: "sidebar",
+          docsPluginId: "default",
           position: "left",
           label: "Documentation",
         },
