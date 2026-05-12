@@ -6,7 +6,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "ignoreDeprecations": "5.0",
-    "strict": true
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@theme/*": ["./node_modules/@docusaurus/theme-classic/lib/theme/*"],
+      "@docusaurus/*": ["./node_modules/@docusaurus/*"]
+    }
   },
   "exclude": [".docusaurus", "build"]
 }
