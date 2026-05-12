@@ -1,8 +1,10 @@
 
 :root {
-  --ifm-color-primary: #32d583;
+  --ifm-color-primary: #00d2ff;
+  --ifm-background-color: #0b1020;
 }
 
-.hero {
-  text-align: center;
+body {
+  background-color: #0b1020;
+  color: white;
 }
